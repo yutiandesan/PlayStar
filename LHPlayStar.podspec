@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
 
-  s.author             = { "刘欢" => "yutiandesan@gmail.com" }
+  s.author             = { "yutiandesan" => "yutiandesan@126.com" }
 
   s.platform     = :ios, "5.0"
   s.requires_arc = true
