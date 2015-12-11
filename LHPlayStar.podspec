@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/yutiandesan/PlayStar.git", :tag => s.version }
 
-  s.source_files  = "LHPlayStar/LHPlayStar/*.{h,m}"
+  s.source_files  = "LHPlayStar/*"
 
   s.frameworks = "UIKit", "Foundation"
 
