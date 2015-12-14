@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LHPlayStar"
-  s.version      = "1.0.2"
+  s.version      = "1.0.1"
   s.summary      = "Play the star,The type of star both NSInteger and CGFloat."
 
   s.description  = <<-DESC
