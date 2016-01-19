@@ -15,13 +15,8 @@
 		D07E60451C1A7DAD00CA1BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07E60431C1A7DAD00CA1BDB /* LaunchScreen.storyboard */; };
 		D07E60501C1A7DAD00CA1BDB /* LHPlayStarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E604F1C1A7DAD00CA1BDB /* LHPlayStarTests.m */; };
 		D07E605B1C1A7DAD00CA1BDB /* LHPlayStarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E605A1C1A7DAD00CA1BDB /* LHPlayStarUITests.m */; };
-		D07E60721C1A7E2900CA1BDB /* starFore.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E606A1C1A7E2900CA1BDB /* starFore.png */; };
-		D07E60731C1A7E2900CA1BDB /* starFore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E606B1C1A7E2900CA1BDB /* starFore@2x.png */; };
-		D07E60741C1A7E2900CA1BDB /* starFore@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E606C1C1A7E2900CA1BDB /* starFore@3x.png */; };
-		D07E60751C1A7E2900CA1BDB /* starGray.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E606D1C1A7E2900CA1BDB /* starGray.png */; };
-		D07E60761C1A7E2900CA1BDB /* starGray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E606E1C1A7E2900CA1BDB /* starGray@2x.png */; };
-		D07E60771C1A7E2900CA1BDB /* starGray@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D07E606F1C1A7E2900CA1BDB /* starGray@3x.png */; };
 		D07E60781C1A7E2900CA1BDB /* LHRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D07E60711C1A7E2900CA1BDB /* LHRatingView.m */; };
+		D0931B9B1C4E1EE500A0B253 /* image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0931B9A1C4E1EE500A0B253 /* image.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,14 +53,9 @@
 		D07E60561C1A7DAD00CA1BDB /* LHPlayStarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHPlayStarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07E605A1C1A7DAD00CA1BDB /* LHPlayStarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHPlayStarUITests.m; sourceTree = "<group>"; };
 		D07E605C1C1A7DAD00CA1BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D07E606A1C1A7E2900CA1BDB /* starFore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starFore.png; sourceTree = "<group>"; };
-		D07E606B1C1A7E2900CA1BDB /* starFore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starFore@2x.png"; sourceTree = "<group>"; };
-		D07E606C1C1A7E2900CA1BDB /* starFore@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starFore@3x.png"; sourceTree = "<group>"; };
-		D07E606D1C1A7E2900CA1BDB /* starGray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starGray.png; sourceTree = "<group>"; };
-		D07E606E1C1A7E2900CA1BDB /* starGray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starGray@2x.png"; sourceTree = "<group>"; };
-		D07E606F1C1A7E2900CA1BDB /* starGray@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "starGray@3x.png"; sourceTree = "<group>"; };
 		D07E60701C1A7E2900CA1BDB /* LHRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHRatingView.h; sourceTree = "<group>"; };
 		D07E60711C1A7E2900CA1BDB /* LHRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHRatingView.m; sourceTree = "<group>"; };
+		D0931B9A1C4E1EE500A0B253 /* image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = image.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,24 +149,11 @@
 		D07E60681C1A7E1800CA1BDB /* Resoruce */ = {
 			isa = PBXGroup;
 			children = (
-				D07E60691C1A7E2900CA1BDB /* image */,
+				D0931B9A1C4E1EE500A0B253 /* image.bundle */,
 				D07E60701C1A7E2900CA1BDB /* LHRatingView.h */,
 				D07E60711C1A7E2900CA1BDB /* LHRatingView.m */,
 			);
 			path = Resoruce;
-			sourceTree = "<group>";
-		};
-		D07E60691C1A7E2900CA1BDB /* image */ = {
-			isa = PBXGroup;
-			children = (
-				D07E606A1C1A7E2900CA1BDB /* starFore.png */,
-				D07E606B1C1A7E2900CA1BDB /* starFore@2x.png */,
-				D07E606C1C1A7E2900CA1BDB /* starFore@3x.png */,
-				D07E606D1C1A7E2900CA1BDB /* starGray.png */,
-				D07E606E1C1A7E2900CA1BDB /* starGray@2x.png */,
-				D07E606F1C1A7E2900CA1BDB /* starGray@3x.png */,
-			);
-			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,14 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07E60451C1A7DAD00CA1BDB /* LaunchScreen.storyboard in Resources */,
-				D07E60761C1A7E2900CA1BDB /* starGray@2x.png in Resources */,
-				D07E60771C1A7E2900CA1BDB /* starGray@3x.png in Resources */,
-				D07E60721C1A7E2900CA1BDB /* starFore.png in Resources */,
-				D07E60751C1A7E2900CA1BDB /* starGray.png in Resources */,
-				D07E60731C1A7E2900CA1BDB /* starFore@2x.png in Resources */,
 				D07E60421C1A7DAD00CA1BDB /* Assets.xcassets in Resources */,
 				D07E60401C1A7DAD00CA1BDB /* Main.storyboard in Resources */,
-				D07E60741C1A7E2900CA1BDB /* starFore@3x.png in Resources */,
+				D0931B9B1C4E1EE500A0B253 /* image.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +514,7 @@
 				D07E60611C1A7DAD00CA1BDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D07E60621C1A7DAD00CA1BDB /* Build configuration list for PBXNativeTarget "LHPlayStarTests" */ = {
 			isa = XCConfigurationList;
@@ -550,6 +523,7 @@
 				D07E60641C1A7DAD00CA1BDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D07E60651C1A7DAD00CA1BDB /* Build configuration list for PBXNativeTarget "LHPlayStarUITests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +532,7 @@
 				D07E60671C1A7DAD00CA1BDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
