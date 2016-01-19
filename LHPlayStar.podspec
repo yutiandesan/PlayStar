@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LHPlayStar"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "Play the star,The type of star both NSInteger and CGFloat."
 
   s.description  = <<-DESC
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/yutiandesan/PlayStar.git", :tag => s.version }
 
-  s.source_files  = "LHPlayStar/*","LHPlayStar/Resource/image/*"
+  s.source_files  = "LHPlayStar/*","LHPlayStar/image/*"
 
   s.frameworks = "UIKit", "Foundation"
 
