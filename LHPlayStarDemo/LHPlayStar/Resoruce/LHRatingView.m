@@ -48,12 +48,12 @@
         eachWidth = (CGRectGetWidth(self.frame)-(starNumber-1)*self.widDistance)/starNumber;
         CGFloat height = CGRectGetHeight(self.frame)-2*self.heiDistance;
         for (int i = 0; i < starNumber; i++) {
-            UIImage * grayImg = [UIImage imageNamed:@"starGray"];
+            UIImage * grayImg = [UIImage imageNamed:@"image.bundle/starGray"];
             UIImageView * grayImgView = [[UIImageView alloc]initWithFrame:CGRectMake((eachWidth+self.widDistance)*i, self.heiDistance, eachWidth, height)];
             grayImgView.image = grayImg;
             [self.grayStarView addSubview:grayImgView];
             
-            UIImage * foreImg = [UIImage imageNamed:@"starFore"];
+            UIImage * foreImg = [UIImage imageNamed:@"image.bundle/starFore"];
             UIImageView * foreImgView = [[UIImageView alloc]initWithFrame:CGRectMake((eachWidth+self.widDistance)*i, self.heiDistance, eachWidth, height)];
             foreImgView.image = foreImg;
             [self.foreStarView addSubview:foreImgView];
