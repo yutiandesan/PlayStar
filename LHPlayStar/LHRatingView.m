@@ -8,21 +8,21 @@
 
 #import "LHRatingView.h"
 
-#define maxScore 5.0f
-#define starNumber 5.0f
+#define maxScore 5.0f //!< 总分数
+#define starNumber 5.0f //!< 星星数量
 
 @interface LHRatingView()
 {
-    CGFloat eachWidth;
+    CGFloat eachWidth;//!< 每一颗星占得宽度
 }
 
-@property (nonatomic,assign)CGFloat widDistance;//星星之间的左右间隔
-@property (nonatomic,assign)CGFloat heiDistance;//星星之间的上下间隔
+@property (nonatomic,assign)CGFloat widDistance;//!< 星星之间的左右间隔
+@property (nonatomic,assign)CGFloat heiDistance;//!< 星星之间的上下间隔
 
-@property (nonatomic,strong)UIView * grayStarView;//灰色星星
-@property (nonatomic,strong)UIView * foreStarView;//表示分数星星
+@property (nonatomic,strong)UIView * grayStarView;//!< 灰色星星
+@property (nonatomic,strong)UIView * foreStarView;//!< 表示分数星星
 
-@property (nonatomic,assign)CGFloat lowestScore;//最低分数
+@property (nonatomic,assign)CGFloat lowestScore;//!< 最低分数
 
 @end
 
@@ -33,11 +33,11 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        /// 设置默认值
         _ratingType = FLOAT_TYPE;
         self.widDistance = 5.0f;
         self.heiDistance = 5.0f;
         self.lowestScore = 1.0f;
-        
         
         self.grayStarView = [[UIView alloc]initWithFrame:self.bounds];
         [self addSubview:self.grayStarView];
@@ -48,12 +48,12 @@
         eachWidth = (CGRectGetWidth(self.frame)-(starNumber-1)*self.widDistance)/starNumber;
         CGFloat height = CGRectGetHeight(self.frame)-2*self.heiDistance;
         for (int i = 0; i < starNumber; i++) {
-            UIImage * grayImg = [UIImage imageNamed:@"starGray"];
+            UIImage * grayImg = [UIImage imageNamed:@"image.bundle/starGray"];
             UIImageView * grayImgView = [[UIImageView alloc]initWithFrame:CGRectMake((eachWidth+self.widDistance)*i, self.heiDistance, eachWidth, height)];
             grayImgView.image = grayImg;
             [self.grayStarView addSubview:grayImgView];
             
-            UIImage * foreImg = [UIImage imageNamed:@"starFore"];
+            UIImage * foreImg = [UIImage imageNamed:@"image.bundle/starFore"];
             UIImageView * foreImgView = [[UIImageView alloc]initWithFrame:CGRectMake((eachWidth+self.widDistance)*i, self.heiDistance, eachWidth, height)];
             foreImgView.image = foreImg;
             [self.foreStarView addSubview:foreImgView];
@@ -106,7 +106,7 @@
 }
 
 
-#pragma mark - 滑动
+#pragma mark - 拖动
 - (void)panGestureEvent:(UIPanGestureRecognizer *)pan_
 {
     
@@ -141,10 +141,7 @@
         p.x = self.frame.size.width;
     }
     
-//    NSString * str = [NSString stringWithFormat:@"%0.2f",p.x / self.frame.size.width];
     float sc = p.x/CGRectGetWidth(self.frame);
-//    p.x = sc * self.frame.size.width;
-    
     
     CGRect fRect = self.foreStarView.frame;
     fRect.size.width = p.x;
